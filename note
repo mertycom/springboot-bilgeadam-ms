@@ -1,0 +1,12 @@
+parent springboot-bilgeadam-ms
+
+    -> configServer, port = 4000
+    -> eureka, port = 4010
+    -> memberService = 8081
+    -> gateway = 8080
+
+
+    config -> server
+    config kullananlar -> client
+
+    eureka-server -> config-server -> config/eureka-server.yml
