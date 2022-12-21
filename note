@@ -1,5 +1,7 @@
 parent springboot-bilgeadam-ms
 
+    // localhost:8080/api/service/member/v1/add
+
     -> configServer, port = 4000
     -> eureka, port = 4010
     -> memberService = 8081
@@ -10,3 +12,12 @@ parent springboot-bilgeadam-ms
     config kullananlar -> client
 
     eureka-server -> config-server -> config/eureka-server.yml
+
+    common-service -> pom.xml   member-service
+                                address-service
+                                user-service rabbitmq member update
+
+
+    member-service -> jpa -> postgres -> docker-compose.yml -> config
+
+    -> exception
