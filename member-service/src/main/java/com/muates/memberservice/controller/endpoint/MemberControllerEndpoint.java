@@ -9,4 +9,5 @@ public class MemberControllerEndpoint {
     public static final String GET_MEMBER = PATH + V1 + "/get/{id}";
     public static final String UPDATE_MEMBER = PATH + V1 + "/update/{id}";
     public static final String DELETE_MEMBER = PATH + V1 + "/delete/{id}";
+    public static final String IS_EXIST_MEMBER = PATH + V1 + "/exist/{id}";
 }

@@ -38,4 +38,9 @@ public class MemberController {
     public String deleteMember(@PathVariable Long id) {
         return memberService.deleteMember(id);
     }
+
+    @GetMapping(IS_EXIST_MEMBER)
+    public boolean existMember(@PathVariable Long id) {
+        return memberService.isExistMember(id);
+    }
 }

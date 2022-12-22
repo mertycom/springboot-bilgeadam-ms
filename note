@@ -21,3 +21,22 @@ parent springboot-bilgeadam-ms
     member-service -> jpa -> postgres -> docker-compose.yml -> config
 
     -> exception
+
+    -> member-service
+    -> member-service-client  MemberDto getMember(Long id)
+    -> address-service id
+
+    1. member-service-client
+    2. address-service -> dependency
+
+
+    Address i kaydedebilmek için kullanıcı kontrolü yapıyoruz
+
+    // member servisten aktif mi
+    // aktif değilse hata bastık
+    // converter yazdık
+    // veriyi kaydedip döndük
+
+    -> address config ayarlamaları yapılacak
+    -> eureka register edilecek
+    -> gateway ayarlandı

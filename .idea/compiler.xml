@@ -9,17 +9,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="member-service" />
+        <module name="address-service" />
         <module name="zuul-service" />
+        <module name="member-service-client" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="address-service" options="-parameters" />
       <module name="common-service" options="" />
       <module name="config-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="member-service" options="-parameters" />
+      <module name="member-service-client" options="-parameters" />
       <module name="springboot-bilgeadam-ms" options="" />
       <module name="zuul-service" options="-parameters" />
     </option>

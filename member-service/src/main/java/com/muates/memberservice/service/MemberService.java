@@ -9,4 +9,5 @@ public interface MemberService {
     MemberResponse getMember(Long id);
     MemberResponse updateMember(Long id, MemberUpdateRequest request);
     String deleteMember(Long id);
+    boolean isExistMember(Long id);
 }

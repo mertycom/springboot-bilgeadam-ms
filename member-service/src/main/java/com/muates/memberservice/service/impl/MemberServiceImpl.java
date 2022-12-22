@@ -52,6 +52,11 @@ public class MemberServiceImpl implements MemberService {
         return "Silme işlemi başarılı!";
     }
 
+    @Override
+    public boolean isExistMember(Long id) {
+        return memberRepository.existsById(id);
+    }
+
     private void checkUpdate(Member member, MemberUpdateRequest request) {
         if (request.getLastName() != null) member.setLastName(request.getLastName());
         if (request.getPhone() != null) member.setPhone(request.getPhone());
